@@ -26,6 +26,8 @@ class LoadingCell: UITableViewCell {
 
         spinner.snp.makeConstraints { make in
             make.center.equalToSuperview()
+            make.top.greaterThanOrEqualToSuperview().offset(8)
+            make.bottom.lessThanOrEqualToSuperview().offset(-8)
         }
 
         spinner.startAnimating()
